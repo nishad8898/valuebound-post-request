@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import Post from './components/Post';
 
 function App() {
   const [data, setData] = useState({ userId: '', title: '', body: '' });
+
+  const { userId, title, body } = data;
 
   const handleChanges = (event) => {
     const { value, name } = event.target;
