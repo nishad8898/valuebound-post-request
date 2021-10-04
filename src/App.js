@@ -3,9 +3,9 @@ import axios from 'axios';
 import './App.css';
 
 function App() {
-  const [data, setData] = useState({ userId: '', title: '', body: '' });
+  const [data, setData] = useState({ id: '', title: '', body: '' });
 
-  const { userId, title, body } = data;
+  const { id, title, body } = data;
 
   const handleChanges = (event) => {
     const { value, name } = event.target;
@@ -30,8 +30,8 @@ function App() {
             type='text'
             className='form-control'
             id='exampleInputEmail1'
-            name='userId'
-            value={userId}
+            name='id'
+            value={id}
             onChange={handleChanges}
           />
         </div>
